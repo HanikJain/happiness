@@ -349,6 +349,7 @@ button span {
     justify-content: flex-end;
     align-items: center;
     row-gap: 10px;
+    padding: 1rem 10px;
 }
 
 .card_link {
@@ -478,4 +479,5 @@ button span {
     .text-center-lg {
         text-align: inherit;
     }
+
 }
