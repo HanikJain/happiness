@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.noSelectHighlight {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    z-index: 1;
+}
+
+@keyframes Flyup {
+    from { 
+        opacity: 0;
+        transform: translateY(0px) scale(1.5);
+    }
+    5% {opacity: 1;}
+    95% {opacity: 1;}
+    to {
+        opacity: 0;
+        transform: translateY(-1000px) scale(2.5); 
+    }
+}
+
+@keyframes fadeIn {
+    from { 
+        transform: translateY(-10px);
+        opacity: 0;
+    } 
+    to { 
+        transform: translateY(0px);
+        opacity: 1; 
+    }
+}
+
+@keyframes appear {
+    from { 
+        opacity: 0;
+    } 
+    to { 
+        opacity: 1; 
+    }
+}
+
+.p_1 {
+    padding: 1rem 2rem;
+}
+
+.mb_1 {
+    margin: 0 0 1rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181b;
+    color: #fff;
+    animation: fadeIn 700ms ease-in-out;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a {
+    all: unset;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.joke_container {
+    margin-top: 2rem;
+}
+
+.joke {
+    font-size: 34px;
+    text-align: start;
+    font-weight: bold;
+    animation: appear 700ms ease-in-out;
+}
+
+.smile_conatiner {
+    position: relative;
+}
+
+.flying_smile {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 5;
+}
+
+.flyup {
+    animation: Flyup 5s ease;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.like {
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: rgba(190, 190, 10, 0.3) 0px 0px 10px;
+    filter: brightness(0.9);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    z-index: 10;
+}
+
+.like:hover {
+    box-shadow: rgba(190, 190, 10, 0.623) 0px 0px 24px;
+    filter: brightness(1.1);
+}
+
+.btn {
+    padding:1rem;
+    background-color: #18181b;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
+    filter: brightness(0.9);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 24px;
+    filter: brightness(1.1);
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+}
+  
+ @keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: scale(10);
+    }
+}
+  
+button span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(239, 238, 238, 0.3);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: ripple 1s;
+    opacity: 0;
+  }
+
+
+.para {
+    margin: 0 auto 3rem;
+    text-align: center;
+    color: rgba(239, 238, 238, 0.557);
+}
+
+.sub_para {
+    margin-bottom: 5px;
+}
+
+/* Projects CSS */
+.relative {
+    position: relative;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-swiper {
+    width: 100%;
+    height: 80vh;
+}
+
+.cards-group {
+    width: 100%;
+    height: 80%;
+    position: relative;
+
+}
+
+.card{
+    position: absolute;
+    margin: 0.5rem auto;
+    width: 200px;
+    aspect-ratio: 9/16;
+    background-color: gray;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 400ms ease;
+}
+
+
+@keyframes imagemove {
+    0% {
+        background-size: 100%;
+        background-position: cover;
+    }
+
+
+    20% {
+        background-position: 0% 100%;
+        background-size: 220%
+    }
+
+    20.0001% {
+        background-position: 0% 100%;
+        background-size: 220%;
+    }
+
+
+    40% {
+        background-position: 100% 100%;
+        background-size: 150%;
+    }
+
+    40.0001% {
+        background-position: 100% 100%;
+        background-size: 150%;
+    }
+
+    60%{
+        background-position: 0% 0%;
+        background-size: 220%;
+    }
+
+    60.0001%{
+        background-position: 0% 0%;
+        background-size: 220%;
+    }
+
+    80%{
+        background-position: 100% 0%;
+        background-size: 180%
+    }
+
+    80.0001%{
+        background-position: 100% 0%;
+        background-size: 180%
+    }
+
+    95% {
+        background-size: 100%;
+        background-position: cover;
+    }
+
+    100% {
+        background-size: 100%;
+        background-position: cover;
+    }
+
+}
+
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: imagemove 15s linear infinite;
+}
+.img_1 {
+    background-image: url("../images/netflix_clone.png");
+}
+
+
+.img_2 {
+    background-image: url("../images/social_media.png");
+}
+
+
+.img_3 {
+    background-image: url("../images/codedamn.png");
+}
+
+
+.img_4 {
+    background-image: url("../images/meal_monkey.png");
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient( to bottom, transparent 30%, rgba(0, 0, 0, 1));
+}
+
+.card_image_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.card_link {
+    all: unset;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
+    filter: brightness(0.9);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.card_link:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 24px;
+    filter: brightness(1.1);
+}
+
+.card[data-status="active"] {
+    transition-delay: 300ms;
+}
+
+
+.card[data-status="inactive"] {
+    transform: translateX(100%) scale(0);
+}
+
+
+.card[data-status="becoming-active-from-before"] {
+    transform: translateX(-100%) scale(0);
+    transition: none;
+}
+
+.card[data-status="before"] {
+    transform: translateX(-100%) scale(0);
+
+}
+
+.card[data-status="becoming-active-from-after"] {
+    transform: translateX(100%) scale(0);
+    transition: none;
+}
+
+
+.card[data-status="after"] {
+    transform: translateX(100%) scale(0);
+}
+
+.card-swiper-btn {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 6rem; 
+}
+
+.swipe_btn {
+    all: unset;
+    position: relative;
+    background-color: #18181b;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-container {
+    position: absolute;
+}
+
+.icons-group {
+    position: absolute;
+}
+
+.icons-active {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.5s ease; 
+}
+
+.icons-hide {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.5s ease; 
+}
+
+.icons-container i:nth-of-type(1) {
+    position: absolute;
+    transform: translate(-170px, 100px) rotate(-30deg);
+    top: 0;
+    left: 0;
+}
+
+.icons-container i:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(140px, 100px) rotate(30deg);
+}
+
+.icons-container i:nth-of-type(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-150px,400px) rotate(-30deg);
+}
+
+.icons-container i:nth-of-type(4) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(150px, 400px) rotate(30deg);
+
+}
+
+.text-center-lg {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .p_1 {
+        padding: 1rem;
+    }
+
+    .text-center-lg {
+        text-align: inherit;
+    }
+}

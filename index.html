@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happiness❤️</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="p_1">
+    <nav class="nav mb_1">
+        <a href="https://github.com/HanikJain/" class="noSelectHighlight" ><i class="fab fa-github"></i></a>
+    </nav>
+
+    <div class="container p_1">
+        <div class="joke_container mb_1" id="joke-container">
+            <span class="joke" id="joke"></span>
+        </div>
+
+        <div class="btn_container">
+            <div class="smile_conatiner" id="smile-container">
+                <button onclick="smileHandler()" class="like noSelectHighlight">😂</button>
+            </div>
+            <button onclick="newJoke()" class="btn noSelectHighlight">Another One</button>
+        </div>
+    </div>
+
+    <div class="p_1 para">
+        <div class="sub_para">
+            Made with <span><i class="fa-brands fa-html5" style="color: #f05028;"></i></span>
+            <span><i class="fa-brands fa-css3-alt" style="color: #0b57da;"></i></span>
+            <span><i class="fa-brands fa-js " style="color: #dbcb14;"></i></span>
+        </div>
+        <div>
+            Yes, that's all you need to spread happiness❤️
+        </div>
+    </div>
+
+    <div class="project_section p_1 mb_1">
+        <h1 class="mb_1 text-center-lg">Explore my Projects</h1>
+
+        <div id="projects" class="project_container flex-start relative">
+            <div class="card-swiper flex-start">
+                <div class="cards-group flex-center">
+                    <div class="card" data-index="0" data-status="active" >
+                        <div class="card_image img_1">
+                            <div class="layer card_image_container p_1">
+                                <div>Netflix Clone</div>
+                                <a href="https://github.com/HanikJain/netflix-clone" class="noSelectHighlight card_link" target=”_blank”>
+                                    <i class="fab fa-github"></i>
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="1" data-status="inactive" >
+                        <div class="card_image img_2">
+                            <div class="layer card_image_container p_1">
+                                <div>Social Media</div>
+                                <a href="https://github.com/HanikJain/socult-assignment" class="noSelectHighlight card_link" target=”_blank”>
+                                    <i class="fab fa-github"></i>
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="2" data-status="inactive" >
+                        <div class="card_image img_3">
+                            <div class="layer card_image_container p_1">
+                                <div>Portfolio Playground</div>
+                                <a href="https://github.com/HanikJain/codedamn-frontend-assessment-" class="noSelectHighlight card_link" target=”_blank”>
+                                    <i class="fab fa-github"></i>
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="3" data-status="inactive" >
+                        <div class="card_image img_4">
+                            <div class="layer card_image_container p_1">
+                                <div>Meal Monkey</div>
+                                <a href="https://github.com/HanikJain/food-ordering-website" class="noSelectHighlight card_link" target=”_blank”>
+                                    <i class="fab fa-github"></i>
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-swiper-btn">
+                        <button class="swipe_btn" onclick="handleClickLeft()" data-disabled="true" >
+                            <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+                        </button>
+                        <button  class="swipe_btn"  onclick="handleClickRight()" data-disabled="true">
+                            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                        </button>
+                </div>
+            </div>
+    
+            <div class="icons-container icons-active " data-iconindex = "0">
+                <i class="fa-brands fa-js " style="color: #dbcb14;"></i>
+                <i class="fa-solid fa-circle-nodes"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #0b57da;"></i>
+                <i class="fa-brands fa-html5" style="color: #f05028;"></i>
+    
+            </div>
+    
+            <div class="icons-container icons-hide" data-iconindex = "1">
+                <i class="fa-solid fa-circle-nodes"></i>
+                <i class="fa-brands fa-js" style="color: #dbcb14;"></i>
+                <i class="fa-brands fa-html5" style="color: #f05028;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #0b57da;"></i>
+             
+    
+            </div>
+    
+            <div class="icons-container icons-hide" data-iconindex = "2">
+                <i class="fa-brands fa-node" style="color: #23b326;"></i>
+                <i class="fa-solid fa-server" style="color: #8a8a8a;"></i>
+                <i class="fa-brands fa-react" style="color: #11add4;"></i>
+                <i class="fa-brands fa-js" style="color: #dbcb14;"></i>
+    
+            </div>
+    
+            <div class="icons-container icons-hide" data-iconindex = "3">
+                <i class="fa-solid fa-server" style="color: #8a8a8a;"></i>
+                <i class="fa-brands fa-node" style="color: #23b326;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #0b57da;"></i>
+                <i class="fa-brands fa-html5" style="color: #f05028;"></i>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+    
+    <!-- Ripple Effect on Button JS -->
+    <script>
+        const btns = document.querySelectorAll("button");
+        for (let btn of btns) {
+            btn.addEventListener('click', function (e){
+                if(btn.dataset.disabled === "true" ) {
+                    return null;
+                }
+
+                // Create span element
+                let ripple = document.createElement("span");
+                // Add ripple class to span
+                ripple.classList.add("ripple");
+                // Add span to the button
+                this.appendChild(ripple);
+
+                // Get position of X
+                let x = e.clientX - e.target.offsetLeft;
+
+                // Get position of Y
+                let y = e.clientY - e.target.offsetTop;
+
+                // Position the span element
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+
+            
+
+                // Remove span after 0.3s
+                setTimeout(() => {
+                    ripple.remove();
+                }, 300);
+            })
+        }
+
+    </script>
+
+    <!-- JS -->
+    <script>
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const jokes= [
+            'Guess the number of programmers it takes to change a light bulb? Zero its a hardware problem',
+            'There are only 10 kinds of people in this world: those who know binary and those who don’t.',
+            'Real programmers count from 0.', 
+            'Why did the programmer quit his job? Because he didnt get arrays.', 
+            'A foo walks into a bar takes a look around and says Hello World',
+            '0 is false 1 is true right? 1',
+            'Things arent always #000000 and #FFFFFF.',
+            'What is the most used language in programming? Profanity',
+            '!False its funny because its True',
+            'Yesterday I changed the name on my wifi to Hack if you can. Today I found it named Challenge Accepted',
+            'A programmer is a person who fixed a problem that you didnt know you had in a way you dont understand',
+            'How can you tell if a computer geek is an extrovert? They stare at your shoes when you talk instead of their own.',
+            'I would love to change the world but they wont give me the source code.',
+            'If at first you dont succedd call it version 1.0',
+            'Computers make very fast very accurate mistakes',
+            'I farted in the Apple store and everyone got mad at me. Not my fault they dont have Windows.',
+            'Knock Knock... Whos there? Art... Art Who? R2D2',
+            'Hilarious and amazingly true thing: if a pizza has a radius (z) and a depth (a) that pizzas volume can be defined Pi*z*z*a.'
+        ]
+
+        function newJoke(){
+    
+            const jokeContainer = document.getElementById('joke-container');
+            const joke = document.getElementById('joke');
+            jokeContainer.removeChild(joke);
+
+            const span = document.createElement("span");
+    
+            const randomNumber=Math.floor(Math.random()*(18));
+            let new_joke = jokes[randomNumber];
+            
+            if(!new_joke) {
+                new_joke = jokes[Math.floor(Math.random()*(10))];
+            }
+
+            span.innerText = new_joke;
+            span.setAttribute("id", "joke");
+            span.classList.add("joke");
+            jokeContainer.appendChild(span);
+
+        }
+        newJoke();
+
+        function smileHandler(){
+            let timer;
+
+            const smileConatiner = document.getElementById("smile-container");
+            const flyingSmile = document.createElement("span");
+            flyingSmile.innerText = "😂";
+            flyingSmile.classList.add("flying_smile");
+            flyingSmile.classList.add("flyup");
+            smileConatiner.appendChild(flyingSmile);
+            timer = setTimeout(() => {
+                flyingSmile.remove();
+                clearInterval(timer);
+            }, 5000)  
+        }
+    </script>
+
+    <!-- Card JS -->
+    <script>
+        let activeIndex = 0;
+        const groups = document.querySelector(".cards-group");
+        const TOTAL_CARDS = groups.children.length;
+
+        function handleClickRight() {
+            let nextIndex = (activeIndex + 1 <= TOTAL_CARDS - 1) ? (activeIndex + 1) : 0;
+            const currentCard = document.querySelector(`[data-index="${activeIndex}"]`),
+                    nextCard = document.querySelector(`[data-index="${nextIndex}"]`);
+            const currentIcon = document.querySelector(`[data-iconindex="${activeIndex}"]`),
+                    nextIcon = document.querySelector(`[data-iconindex="${nextIndex}"]`);
+
+                    currentIcon.classList.remove("icons-active");
+                    currentIcon.classList.add("icons-hide");
+                    nextIcon.classList.remove("icons-hide")
+                    nextIcon.classList.add("icons-active")
+                    currentCard.dataset.status = "before";
+                    nextCard.dataset.status = "becoming-active-from-after";
+            setTimeout(() => {
+                nextCard.dataset.status = "active";
+                activeIndex = nextIndex;
+            })
+
+        }
+
+        function handleClickLeft() {
+            let nextIndex = (activeIndex - 1 >= 0) ? (activeIndex - 1) : TOTAL_CARDS - 1;
+
+            const currentCard = document.querySelector(`[data-index="${activeIndex}"]`),
+                    nextCard = document.querySelector(`[data-index="${nextIndex}"]`);
+
+                    
+                const currentIcon = document.querySelector(`[data-iconindex="${activeIndex}"]`),
+                nextIcon = document.querySelector(`[data-iconindex="${nextIndex}"]`)
+
+                currentIcon.classList.remove("icons-active");
+                currentIcon.classList.add("icons-hide");
+
+                nextIcon.classList.remove("icons-hide")
+                nextIcon.classList.add("icons-active")
+        
+            currentCard.dataset.status = "after";
+
+            nextCard.dataset.status = "becoming-active-from-before";
+
+
+
+            setTimeout(() => {
+
+                nextCard.dataset.status = "active";
+                activeIndex = nextIndex;
+            })
+
+        }
+
+    </script>
+</body>
+</html>
